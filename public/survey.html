@@ -8,6 +8,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
 
 </head>
 
@@ -27,7 +28,7 @@
 
         <h3>Question 1</h3>
         <h4>Your mind is always buzzing with unexplored ideas and plans</h4>
-        <select class="chosen-select" id="q1">
+        <select class="chosen-option" id="q1">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -38,7 +39,7 @@
 
         <h3>Question 2</h3>
         <h4>Another Question</h4>
-        <select class="chosen-select" id="q2">
+        <select class="chosen-option" id="q2">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -47,6 +48,93 @@
             <option value="5">5 (Strongly Agree)</option>
         </select>
 
+        <h3>Question 3</h3>
+        <h4>Another Question</h4>
+        <select class="chosen-option" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>Question 4</h3>
+        <h4>Another Question</h4>
+        <select class="chosen-option" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>Question 5</h3>
+        <h4>Another Question</h4>
+        <select class="chosen-option" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>Question 6</h3>
+        <h4>Another Question</h4>
+        <select class="chosen-option" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>Question 7</h3>
+        <h4>Another Question</h4>
+        <select class="chosen-option" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>Question 8</h3>
+        <h4>Another Question</h4>
+        <select class="chosen-option" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>Question 9</h3>
+        <h4>Another Question</h4>
+        <select class="chosen-option" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>Question 10</h3>
+        <h4>Another Question</h4>
+        <select class="chosen-option" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
         <br>
         <br>
         <br>
@@ -57,7 +145,7 @@
 
         <footer class="footer">
                 <div class="container">
-                    <p><a href="/api/tables">API Friend List</a> | <a href="/api/waitlist">GitHub Repo</a>
+                    <p><a href="/api/friends">API Friend List</a> | <a href="https://github.com/Avalineai/13-FriendFinder">GitHub Repo</a>
                 </div>
         </footer>
 
@@ -65,11 +153,71 @@
 
 
 
+<script type="text/javascript">
+$("#submit").on("click", function(event){
+    event.preventDefault();
+
+    var newFriend = {
+        "name": $("#name").val().trim(),
+        "photo": $("#photo").val().trim(),
+        "scores": [
+            $("#q1").val().trim(),
+            $("#q2").val().trim(),
+            $("#q3").val().trim(),
+            $("#q4").val().trim(),
+            $("#q5").val().trim(),
+            $("#q6").val().trim(),
+            $("#q7").val().trim(),
+            $("#q8").val().trim(),
+            $("#q9").val().trim(),
+            $("#q10").val().trim()
+    ]
+    }
+    console.log(newFriend)
+
+        $("#name").val("");
+        $("#photo").val("");
+        $("#q1").val("");
+        $("#q2").val("");
+        $("#q3").val("");
+        $("#q4").val("");
+        $("#q5").val("");
+        $("#q6").val("");
+        $("#q7").val("");
+        $("#q8").val("");
+        $("#q9").val("");
+        $("#q10").val("");
+
+        //post currently not working..
+
+        
+    // $.post("api/friends", newFriend, function(data){
+    //     if(data) {
+    //         console.log("New friend added!")
+    //     } else {
+    //         console.log("Could not add friend")
+    //     }
+
+    //     $("#name").val("");
+    //     $("#photo").val("");
+    //     $("#q1").val("");
+    //     $("#q2").val("");
+    //     $("#q3").val("");
+    //     $("#q4").val("");
+    //     $("#q5").val("");
+    //     $("#q6").val("");
+    //     $("#q7").val("");
+    //     $("#q8").val("");
+    //     $("#q9").val("");
+    //     $("#q10").val("");
+
+    // })
+})
 
 
 
 
-
+</script>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
