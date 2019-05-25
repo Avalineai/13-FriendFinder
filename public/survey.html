@@ -204,7 +204,15 @@
                     }
                 }
             })
-
+            var friendScoreArr = []
+            newFriend.scores.forEach(function(item) {
+                if (item !== "") {
+                    friendScoreArr.push(item)
+                } else {
+                    console.log("incomplete question")
+                }
+            })
+            if (friendScoreArr.length === 10) {
             //need to check data, when val === "", to not post.
             $.post("/api/friends", newFriend, function (data) {
                 $("#name").val("");
@@ -222,6 +230,10 @@
                 $(".modal-title").append(data.name)
                 $(".modal-body").append(`${data.name} is your new best friend! <br><br><img src=${data.photo}><br>`)
             })
+        } else {
+            console.log("incomplete")
+            $(".modal-title").append("incomplete survey")
+        }
         })
         $("#close-button").on("click", function (event) {
             event.preventDefault();
