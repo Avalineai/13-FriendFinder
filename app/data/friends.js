@@ -1,52 +1,62 @@
 var friendArray = [
     {
         "name": "Jesse",
-        "photo": "https://imagelink",
+        "photo": "http://placekitten.com/200/200",
         "scores": [
             5,
             1,
             4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
+            // 4,
+            // 5,
+            // 1,
+            // 2,
+            // 5,
+            // 4,
+            // 1
         ]
     },
     {
         "name": "James",
-        "photo": "https://imagelink",
+        "photo": "http://placekitten.com/200/200",
         "scores": [
             5,
             1,
-            4,
-            4,
-            5,
-            1,
             2,
-            5,
-            4,
-            1
+            // 4,
+            // 5,
+            // 1,
+            // 2,
+            // 5,
+            // 4,
+            // 1
         ]
     },
     {
         "name": "Pikachu",
-        "photo": "https://imagelink",
+        "photo": "http://placekitten.com/200/200",
         "scores": [
             5,
             1,
-            4,
-            4,
-            5,
             1,
+            // 4,
+            // 5,
+            // 1,
+            // 2,
+            // 5,
+            // 4,
+            // 1
+        ]
+    },
+    {
+        "name": "Meowth",
+        "photo": "http://placekitten.com/200/200",
+        "scores": [
+            3,
             2,
-            5,
-            4,
-            1
+            5
         ]
     }
+
 ]
 
 module.exports = friendArray
