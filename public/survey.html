@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Tables Page</title>
+    <title>Friend Finder</title>
 
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -20,16 +19,16 @@
 
         <h3>About You</h3>
         <h4>Name (Required)</h4>
-        <input type="text" id="name" class="form-control" required>
+        <input type="text" id="name" class="user-input">
 
         <h4>Link to Photo Image (Required)</h4>
-        <input type="text" id="photo" class="form-control" required>
+        <input type="text" id="photo" class="user-input">
 
         <hr>
 
         <h3>Question 1</h3>
-        <h4>Your mind is always buzzing with unexplored ideas and plans</h4>
-        <select class="chosen-option" id="q1">
+        <h4>Pokemon are cool and it would be awesome to have at least one</h4>
+        <select class="user-input" id="q1">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -39,8 +38,8 @@
         </select>
 
         <h3>Question 2</h3>
-        <h4>Another Question</h4>
-        <select class="chosen-option" id="q2">
+        <h4>Being the best Pokemon trainer is your life goal</h4>
+        <select class="user-input" id="q2">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -50,8 +49,8 @@
         </select>
 
         <h3>Question 3</h3>
-        <h4>Another Question</h4>
-        <select class="chosen-option" id="q3">
+        <h4>You enjoy learning about Pokemon and spend all your time trying to understand them</h4>
+        <select class="user-input" id="q3">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -59,10 +58,10 @@
             <option value="4">4</option>
             <option value="5">5 (Strongly Agree)</option>
         </select>
-        <!--
+
         <h3>Question 4</h3>
-        <h4>Another Question</h4>
-        <select class="chosen-option" id="q4">
+        <h4>Spending a day at the beach or by the lake would be ideal</h4>
+        <select class="user-input" id="q4">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -72,8 +71,8 @@
         </select>
 
         <h3>Question 5</h3>
-        <h4>Another Question</h4>
-        <select class="chosen-option" id="q5">
+        <h4>Camping in the forest near a warm fire and roasting marshmallows is fun</h4>
+        <select class="user-input" id="q5">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -83,8 +82,8 @@
         </select>
 
         <h3>Question 6</h3>
-        <h4>Another Question</h4>
-        <select class="chosen-option" id="q6">
+        <h4>Having a good group of friends is really important</h4>
+        <select class="user-input" id="q6">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -94,8 +93,8 @@
         </select>
 
         <h3>Question 7</h3>
-        <h4>Another Question</h4>
-        <select class="chosen-option" id="q7">
+        <h4>You love fish, and find them fascinating</h4>
+        <select class="user-input" id="q7">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -105,8 +104,8 @@
         </select>
 
         <h3>Question 8</h3>
-        <h4>Another Question</h4>
-        <select class="chosen-option" id="q8">
+        <h4>Yellow is your favorite color</h4>
+        <select class="user-input" id="q8">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -116,8 +115,8 @@
         </select>
 
         <h3>Question 9</h3>
-        <h4>Another Question</h4>
-        <select class="chosen-option" id="q9">
+        <h4>Money is always a good thing</h4>
+        <select class="user-input" id="q9">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -127,8 +126,8 @@
         </select>
 
         <h3>Question 10</h3>
-        <h4>Another Question</h4>
-        <select class="chosen-option" id="q10">
+        <h4>Adventuring in the tall grass is a great way to explore</h4>
+        <select class="user-input" id="q10">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
             <option value="2">2</option>
@@ -136,12 +135,13 @@
             <option value="4">4</option>
             <option value="5">5 (Strongly Agree)</option>
         </select>
-    -->
+
         <br>
         <br>
         <br>
 
-        <button type="submit" data-toggle="modal" data-target="#friendMatch" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
+        <button type="submit" data-toggle="modal" data-target="#friendMatch" class="btn btn-primary btn-lg btn-block"
+            id="submit">Submit</button>
 
         <hr>
 
@@ -159,7 +159,8 @@
                         <p></p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button id="close-button" type="button" class="btn btn-secondary"
+                            data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -179,59 +180,54 @@
         $("#submit").on("click", function (event) {
             event.preventDefault();
 
-            var newFriend = {
-                "name": $("#name").val().trim(),
-                "photo": $("#photo").val().trim(),
-                "scores": [
-                    $("#q1").val().trim(),
-                    $("#q2").val().trim(),
-                    $("#q3").val().trim(),
-                    // $("#q4").val().trim(),
-                    // $("#q5").val().trim(),
-                    // $("#q6").val().trim(),
-                    // $("#q7").val().trim(),
-                    // $("#q8").val().trim(),
-                    // $("#q9").val().trim(),
-                    // $("#q10").val().trim()
-                ]
-            }
-            console.log(newFriend)
+            var newFriend = {}
+            $(".user-input").each(function () {
+                if ($(this).val() === "") {
+                    $(this).css('border-color', 'red');
+                } else {
 
+                    newFriend = {
+                        "name": $("#name").val().trim(),
+                        "photo": $("#photo").val().trim(),
+                        "scores": [
+                            $("#q1").val().trim(),
+                            $("#q2").val().trim(),
+                            $("#q3").val().trim(),
+                            $("#q4").val().trim(),
+                            $("#q5").val().trim(),
+                            $("#q6").val().trim(),
+                            $("#q7").val().trim(),
+                            $("#q8").val().trim(),
+                            $("#q9").val().trim(),
+                            $("#q10").val().trim()
+                        ]
+                    }
+                }
+            })
+
+            //need to check data, when val === "", to not post.
             $.post("/api/friends", newFriend, function (data) {
-                // if (data) {
-                //     console.log("New friend added!")
-                // } else {
-                //     console.log("Could not add friend")
-                // }
-
                 $("#name").val("");
                 $("#photo").val("");
                 $("#q1").val("");
                 $("#q2").val("");
                 $("#q3").val("");
-                // $("#q4").val("");
-                // $("#q5").val("");
-                // $("#q6").val("");
-                // $("#q7").val("");
-                // $("#q8").val("");
-                // $("#q9").val("");
-                // $("#q10").val("");
+                $("#q4").val("");
+                $("#q5").val("");
+                $("#q6").val("");
+                $("#q7").val("");
+                $("#q8").val("");
+                $("#q9").val("");
+                $("#q10").val("");
                 $(".modal-title").append(data.name)
                 $(".modal-body").append(`${data.name} is your new best friend! <br><br><img src=${data.photo}><br>`)
-                //$('.modal-body').append(data.name)
-                console.log("front end" + data.name)
             })
-
-
-
-
-
-
         })
-
+        $("#close-button").on("click", function (event) {
+            event.preventDefault();
+            $(".modal-title").empty();
+            $(".modal-body").empty();
+        })
     </script>
-
-    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>

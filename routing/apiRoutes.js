@@ -22,7 +22,7 @@ module.exports = function(app){
                     
 
                 
-                }console.log(scoreDifference)
+                }//console.log(scoreDifference)
             }
         }
         //find lowest data, and create modal pop-up
