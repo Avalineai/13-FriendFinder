@@ -185,7 +185,9 @@
                 if ($(this).val() === "") {
                     $(this).css('border-color', 'red');
                 } else {
-
+                    $(this).css('border-color', 'rgb(166, 166, 166)');
+                    $("#name").css('border-color', 'initial');
+                    $("#photo").css('border-color', 'initial')
                     newFriend = {
                         "name": $("#name").val().trim(),
                         "photo": $("#photo").val().trim(),
