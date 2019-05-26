@@ -1,7 +1,7 @@
 var friendArray = [
     {//need 12 friends to choose from
         "name": "Jessie",
-        "photo": "https://friend-finder-05252019.herokuapp.com/jessie.jpeg",
+        "photo": "https://friend-finder-05252019.herokuapp.com/images/jessie.jpeg",
         "scores": [
             5,
             3,
@@ -17,7 +17,7 @@ var friendArray = [
     },
     {
         "name": "James",
-        "photo": "https://friend-finder-05252019.herokuapp.com/james.jpeg",
+        "photo": "https://friend-finder-05252019.herokuapp.com/images/james.jpeg",
         "scores": [
             5,
             3,
@@ -34,7 +34,7 @@ var friendArray = [
     },
     {
         "name": "Gary",
-        "photo": "https://friend-finder-05252019.herokuapp.com/gary.jpeg",
+        "photo": "https://friend-finder-05252019.herokuapp.com/images/gary.jpeg",
         "scores": [
             5,
             5,
@@ -51,7 +51,7 @@ var friendArray = [
     },
     {
         "name": "Ash Ketchum",
-        "photo": "https://friend-finder-05252019.herokuapp.com/ashketchum.jpeg",
+        "photo": "https://friend-finder-05252019.herokuapp.com/images/ashketchum.jpeg",
         "scores": [
             5,
             5,
@@ -67,7 +67,7 @@ var friendArray = [
     },
     {
         "name": "Professor Oak",
-        "photo": "https://friend-finder-05252019.herokuapp.com/professoroak.jpeg",
+        "photo": "https://friend-finder-05252019.herokuapp.com/images/professoroak.jpeg",
         "scores": [
             5,
             1,
@@ -83,7 +83,7 @@ var friendArray = [
     },
     {
         "name": "Brock",
-        "photo": "https://friend-finder-05252019.herokuapp.com/brock.jpeg",
+        "photo": "https://friend-finder-05252019.herokuapp.com/images/brock.jpeg",
         "scores": [
             5,
             4,
@@ -99,7 +99,7 @@ var friendArray = [
     },
     {
         "name": "Misty",
-        "photo": "https://friend-finder-05252019.herokuapp.com/misty.jpeg",
+        "photo": "https://friend-finder-05252019.herokuapp.com/images/misty.jpeg",
         "scores": [
             5,
             4,
@@ -132,7 +132,7 @@ var friendArray = [
     },
     {
         "name": "Bulbasaur",
-        "photo": "https://friend-finder-05252019.herokuapp.com/bulbasaur.jpeg",
+        "photo": "https://friend-finder-05252019.herokuapp.com/images/bulbasaur.jpeg",
         "scores": [
             3,
             1,
@@ -148,7 +148,7 @@ var friendArray = [
     },
     {
         "name": "Squirtle",
-        "photo": "https://friend-finder-05252019.herokuapp.com/squirtle.jpeg",
+        "photo": "https://friend-finder-05252019.herokuapp.com/images/squirtle.jpeg",
         "scores": [
             4,
             1,
@@ -164,7 +164,7 @@ var friendArray = [
     },
     {
         "name": "Pikachu",
-        "photo": "https://friend-finder-05252019.herokuapp.com/pikachu.jpeg",
+        "photo": "https://friend-finder-05252019.herokuapp.com/images/pikachu.jpeg",
         "scores": [
             3,
             1,
@@ -181,7 +181,7 @@ var friendArray = [
     },
     {
         "name": "Meowth",
-        "photo": "https://friend-finder-05252019.herokuapp.com/meowth.png",
+        "photo": "https://friend-finder-05252019.herokuapp.com/images/meowth.png",
         "scores": [
             4,
             2,
