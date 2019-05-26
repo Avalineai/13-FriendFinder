@@ -1,7 +1,7 @@
 var friendArray = [
     {//need 12 friends to choose from
         "name": "Jessie",
-        "photo": "http://placekitten.com/200/200",
+        "photo": "",
         "scores": [
             5,
             3,
@@ -115,7 +115,7 @@ var friendArray = [
     },
     {
         "name": "Charmander",
-        "photo": "",
+        "photo": "http://localhost:8000/charmander.png",
         "scores": [
             3,
             1,
