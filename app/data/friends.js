@@ -115,7 +115,7 @@ var friendArray = [
     },
     {
         "name": "Charmander",
-        "photo": "http://localhost:8000/charmander.png",
+        "photo": "https://friend-finder-05252019.herokuapp.com/charmander.png",
         "scores": [
             3,
             1,
