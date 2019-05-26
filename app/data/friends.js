@@ -99,7 +99,7 @@ var friendArray = [
     },
     {
         "name": "Misty",
-        "photo": "https://friend-finder-05252019.herokuapp.com/jpeg",
+        "photo": "https://friend-finder-05252019.herokuapp.com/misty.jpeg",
         "scores": [
             5,
             4,
@@ -115,7 +115,7 @@ var friendArray = [
     },
     {
         "name": "Charmander",
-        "photo": "https://friend-finder-05252019.herokuapp.com/charmander.png",
+        "photo": "https://friend-finder-05252019.herokuapp.com/images/charmander.png",
         "scores": [
             3,
             1,
