@@ -1,7 +1,7 @@
 var friendArray = [
     {//need 12 friends to choose from
         "name": "Jessie",
-        "photo": "",
+        "photo": "https://friend-finder-05252019.herokuapp.com/jessie.jpeg",
         "scores": [
             5,
             3,
@@ -17,7 +17,7 @@ var friendArray = [
     },
     {
         "name": "James",
-        "photo": "http://placekitten.com/200/200",
+        "photo": "https://friend-finder-05252019.herokuapp.com/james.jpeg",
         "scores": [
             5,
             3,
@@ -34,7 +34,7 @@ var friendArray = [
     },
     {
         "name": "Gary",
-        "photo": "",
+        "photo": "https://friend-finder-05252019.herokuapp.com/gary.jpeg",
         "scores": [
             5,
             5,
@@ -51,7 +51,7 @@ var friendArray = [
     },
     {
         "name": "Ash Ketchum",
-        "photo": "",
+        "photo": "https://friend-finder-05252019.herokuapp.com/ashketchum.jpeg",
         "scores": [
             5,
             5,
@@ -67,7 +67,7 @@ var friendArray = [
     },
     {
         "name": "Professor Oak",
-        "photo": "",
+        "photo": "https://friend-finder-05252019.herokuapp.com/professoroak.jpeg",
         "scores": [
             5,
             1,
@@ -83,7 +83,7 @@ var friendArray = [
     },
     {
         "name": "Brock",
-        "photo": "",
+        "photo": "https://friend-finder-05252019.herokuapp.com/brock.jpeg",
         "scores": [
             5,
             4,
@@ -99,7 +99,7 @@ var friendArray = [
     },
     {
         "name": "Misty",
-        "photo": "",
+        "photo": "https://friend-finder-05252019.herokuapp.com/jpeg",
         "scores": [
             5,
             4,
@@ -132,7 +132,7 @@ var friendArray = [
     },
     {
         "name": "Bulbasaur",
-        "photo": "",
+        "photo": "https://friend-finder-05252019.herokuapp.com/bulbasaur.jpeg",
         "scores": [
             3,
             1,
@@ -148,7 +148,7 @@ var friendArray = [
     },
     {
         "name": "Squirtle",
-        "photo": "",
+        "photo": "https://friend-finder-05252019.herokuapp.com/squirtle.jpeg",
         "scores": [
             4,
             1,
@@ -164,7 +164,7 @@ var friendArray = [
     },
     {
         "name": "Pikachu",
-        "photo": "http://placekitten.com/200/200",
+        "photo": "https://friend-finder-05252019.herokuapp.com/pikachu.jpeg",
         "scores": [
             3,
             1,
@@ -181,7 +181,7 @@ var friendArray = [
     },
     {
         "name": "Meowth",
-        "photo": "http://placekitten.com/200/200",
+        "photo": "https://friend-finder-05252019.herokuapp.com/meowth.png",
         "scores": [
             4,
             2,
