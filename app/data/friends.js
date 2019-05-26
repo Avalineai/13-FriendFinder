@@ -67,7 +67,7 @@ var friendArray = [
     },
     {
         "name": "Professor Oak",
-        "photo": "https://friend-finder-05252019.herokuapp.com/images/professoroak.jpeg",
+        "photo": "https://friend-finder-05252019.herokuapp.com/images/prof-oak.jpeg",
         "scores": [
             5,
             1,
